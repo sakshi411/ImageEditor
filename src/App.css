@@ -1,0 +1,61 @@
+html, body { height: 70%; }
+#root {
+    height: 100%;
+}
+.preview { margin: 0; height: 100%; position: relative; top: 10%; width: 50%;margin: auto; }
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+input#colorPicker { 
+    /* removes default styling from input color element */
+  
+    /* makes input (color swatch) 100% size of container */
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    /* mix blend mode makes the color of the swatch alter the image behind it. */
+    mix-blend-mode: hue; /* try screen, multiply or other blend modes for different effects */
+    cursor: pointer;
+}
+
+
+::-webkit-color-swatch {
+    border: none;
+}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner {
+    border: none;
+  
+}
+
+::-moz-focus-inner {
+    padding: 0;
+}
+.text{
+position: absolute;
+z-index: 2;
+color: red;
+font-size: 1.5em;
+bottom: 30%;
+left: 40%;
+}
+.iconUpload {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: hue;
+    cursor: pointer;
+}
